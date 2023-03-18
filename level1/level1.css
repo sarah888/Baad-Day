@@ -2,7 +2,7 @@
 body{
   background-image: url("bedBackground_improved.png");
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: cover;
 }
 /*Multiple Choice Position*/
 #switchPosition{
@@ -165,7 +165,7 @@ height: 76px;
 line-height: 78px;
 font-size: 20px;
 font-family: 'Bebas Neue', sans-serif;
-background: linear-gradient(45deg, transparent 5%, #ff9101 5%);
+background: linear-gradient(45deg, transparent 5%, #060b73 5%);
 border: 0;
 color: #fff;
 letter-spacing: 3px;
@@ -187,14 +187,14 @@ touch-action: manipulation;
 --slice-4: inset(40% -6px 43% 0);
 --slice-5: inset(80% -6px 5% 0);
 
-content: 'BAAD DAY';
+content: 'WAKE UP';
 display: block;
 position: absolute;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #ff9101 5%);
+background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #02005b 5%);
 text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
 clip-path: var(--slice-0);
 }
@@ -258,4 +258,10 @@ animation-timing-function: steps(2, end);
   height: 86px;
   line-height: 88px;
 }
+}
+/*Button Position*/
+#position{
+  position: absolute;
+  bottom: 17.5%;
+  right: 17.5%;
 }
