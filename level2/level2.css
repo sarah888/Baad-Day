@@ -1,0 +1,6 @@
+/*Background Image*/
+body{
+    background-image: url("kitchenScenario.png");
+    background-attachment: fixed;
+    background-size: 100% auto;
+  }
