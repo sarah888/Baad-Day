@@ -2,5 +2,5 @@
 body{
     background-image: url("bedBackground_improved.png");
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
   }
