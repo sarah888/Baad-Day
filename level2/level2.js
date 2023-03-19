@@ -1,13 +1,37 @@
 const apiKey = "ZRf2ijG6bg0QNbQoKTAIk77ECypW8XMqgNJgdJnf";
 
 // Get the user input of ingredients
-var input = document.getElementById("potato").value;
+var input = document.getElementById("potato");
 var submit = document.getElementById("submit");
+
+var foods = "";
 
 submit.addEventListener('click',getText);
 
 function getText(event){
-  console.log(input);
+  foods = input.value;
+}
+
+const nutrients = {
+  chicken: { protein: 23.9, carbohydrate: 0 },
+  cookies: { protein: 5.79, carbohydrate: 69.6 },
+};
+
+if (nutrients.hasOwnProperty(food)) {
+  // Get the nutrient values for the inputted food
+  const { protein, carbohydrate } = nutrients[food];
+
+  // Output the nutrient values for the inputted food
+  console.log(`protein = ${protein}g and carbohydrate = ${carbohydrate}g`);
+
+  // Check if the protein content is greater than 20g
+  if (protein > 20) {
+    console.log("That's great, Sheeper is getting enough protein for lunch!");
+  } else {
+    console.log("You might want to reconsider what Sheeper wants for lunch.");
+  }
+} else {
+  console.log("Sorry, I don't know the nutrient values for that food item.");
 }
 
 // Split the input string into an array of ingredients
