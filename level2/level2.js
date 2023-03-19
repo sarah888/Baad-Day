@@ -1,7 +1,14 @@
 const apiKey = "ZRf2ijG6bg0QNbQoKTAIk77ECypW8XMqgNJgdJnf";
 
 // Get the user input of ingredients
-const inputIngredients = prompt("Enter a comma-separated list of ingredients:");
+var input = document.getElementById("potato").value;
+var submit = document.getElementById("submit");
+
+submit.addEventListener('click',getText);
+
+function getText(event){
+  console.log(input);
+}
 
 // Split the input string into an array of ingredients
 const ingredients = inputIngredients.split(",").map(ingredient => ingredient.trim());
