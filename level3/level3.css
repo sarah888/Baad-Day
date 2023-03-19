@@ -483,3 +483,8 @@ animation-timing-function: steps(2, end);
   left: 55%;
 
 }
+.button{
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+}
