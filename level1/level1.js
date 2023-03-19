@@ -4,6 +4,8 @@ const confirm = document.getElementById("confirm");
 const text1 = document.getElementById("text1")
 const text2 = document.getElementById("text2")
 const text3 = document.getElementById("text3")
+const text4 = document.getElementById("text4")
+const text5 = document.getElementById("text5")
 const position = document.getElementById("position1")
 
 var decision = "";

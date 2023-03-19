@@ -7,7 +7,10 @@ let nyquil = document.getElementById("checkbox5");
 let confirm = document.getElementById("confirm");
 let next = document.getElementById("next")
 
-var bad = 1
+const text1 = document.getElementById("text1")
+const text2 = document.getElementById("text2")
+
+var bad = 0
 var good = 1
 var score
 
@@ -40,12 +43,17 @@ confirm.addEventListener('click', () => {
     if (confirm.innerHTML=="GO TO BED"){
         next.href="../end/end.html"
     }
+    
     validate1();
     validate2();
     validate3();
     validate4();
     validate5();
-    score = good/bad;
     confirm.innerHTML="GO TO BED";
-    alert(score);
+    if (bad>0){
+      text1.innerHTML = "That might disturb Sheeper’s sleep. But everyday is a new day,"
+      text2.innerHTML = "and Sheeper is looking forward to tomorrow!"
+    }else{
+      text1.innerHTML = "Great idea! This will help Sheeper rest for a great day tomorrow."
+    }
 });
