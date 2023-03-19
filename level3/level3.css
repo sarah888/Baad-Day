@@ -88,6 +88,12 @@ body
       blink-caret .75s step-end infinite;
       color: #fa95ff;
   }
+  #position1{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+  
+  }
   
   /* The typing effect */
   @keyframes typing {
@@ -223,4 +229,257 @@ animation-timing-function: steps(2, end);
   position: absolute;
   bottom: 5%;
   right: 2.5%;
+}
+
+
+
+.checkbox-wrapper-26 * {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.checkbox-wrapper-26 input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper-26 label {
+  --size: 50px;
+  --shadow: calc(var(--size) * .07) calc(var(--size) * .1);
+
+  position: relative;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  margin: 0 auto;
+  background-color: #ff9101;
+  border-radius: 50%;
+  box-shadow: 0 var(--shadow) #ffe696;
+  cursor: pointer;
+  transition: 0.2s ease transform, 0.2s ease background-color,
+    0.2s ease box-shadow;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.checkbox-wrapper-26 label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: calc(var(--size) * .7);
+  height: calc(var(--size) * .7);
+  margin: 0 auto;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: inset 0 var(--shadow) #ffe696;
+  transition: 0.2s ease width, 0.2s ease height;
+}
+
+.checkbox-wrapper-26 label:hover:before {
+  width: calc(var(--size) * .55);
+  height: calc(var(--size) * .55);
+  box-shadow: inset 0 var(--shadow) #ffe696;
+}
+
+.checkbox-wrapper-26 label:active {
+  transform: scale(0.9);
+}
+
+.checkbox-wrapper-26 .tick_mark {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  left: calc(var(--size) * -.05);
+  width: calc(var(--size) * .6);
+  height: calc(var(--size) * .6);
+  margin: 0 auto;
+  margin-left: calc(var(--size) * .14);
+  transform: rotateZ(-40deg);
+}
+
+.checkbox-wrapper-26 .tick_mark:before,
+.checkbox-wrapper-26 .tick_mark:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 0.2s ease transform, 0.2s ease opacity;
+}
+
+.checkbox-wrapper-26 .tick_mark:before {
+  left: 0;
+  bottom: 0;
+  width: calc(var(--size) * .1);
+  height: calc(var(--size) * .3);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+  transform: translateY(calc(var(--size) * -.68));
+}
+
+.checkbox-wrapper-26 .tick_mark:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(var(--size) * .1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+  transform: translateX(calc(var(--size) * .78));
+}
+
+.checkbox-wrapper-26 input[type="checkbox"]:checked + label {
+  background-color: #00E6F6;
+  box-shadow: 0 var(--shadow) #acf8fd;
+}
+
+.checkbox-wrapper-26 input[type="checkbox"]:checked + label:before {
+  width: 0;
+  height: 0;
+}
+
+.checkbox-wrapper-26 input[type="checkbox"]:checked + label .tick_mark:before,
+.checkbox-wrapper-26 input[type="checkbox"]:checked + label .tick_mark:after {
+  transform: translate(0);
+  opacity: 1;
+}
+
+body,
+html {
+margin: 0;
+height: 100%;
+display: grid;
+color: #4a0368;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("Venily.ttf");
+}
+
+h2 {
+margin: auto;
+letter-spacing: 0.015em;
+font-size: 2em;
+  line-height: 1.56;
+text-shadow: 0 1px #ca8dff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
+  -2px 3px #ca8dff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff;
+text-align: left;
+  font-family: myFirstFont;
+  src: url("Venily.ttf")
+}
+
+.button-49,
+.button-49:after {
+width: 150px;
+height: 76px;
+line-height: 78px;
+font-size: 20px;
+font-family: myFirstFont;
+src: url("Venily.ttf");
+background: linear-gradient(45deg, transparent 5%, #ff9101 5%);
+border: 0;
+color: #fff;
+letter-spacing: 3px;
+box-shadow: 6px 0px 0px #acf8fd;
+outline: transparent;
+position: absolute;
+right:    20;
+bottom:   20;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.button-49:after {
+--slice-0: inset(50% 50% 50% 50%);
+--slice-1: inset(80% -6px 0 0);
+--slice-2: inset(50% -6px 30% 0);
+--slice-3: inset(10% -6px 85% 0);
+--slice-4: inset(40% -6px 43% 0);
+--slice-5: inset(80% -6px 5% 0);
+
+content: 'BAAD DAY';
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #ff9101 5%);
+text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+animation: 1s glitch;
+animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+}
+10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+}
+20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+}
+30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+}
+40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+}
+50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+}
+60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+}
+70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+}
+80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+}
+90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+}
+100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+}
+}
+
+@media (min-width: 768px) {
+.button-49,
+.button-49:after {
+  width: 200px;
+  height: 86px;
+  line-height: 88px;
+}
+}
+#switchPosition{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+#switchPositionText{
+  position: absolute;
+  top: 52%;
+  left: 55%;
+
 }
