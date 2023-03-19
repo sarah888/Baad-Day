@@ -1,6 +1,6 @@
 /*Background Image*/
 body{
-    background-image: url("kitchenScenario.png");
+    background-image: url("kitchenScenario.jpg");
     background-attachment: fixed;
     background-size: 100% auto;
   }
@@ -148,16 +148,35 @@ h1 {
       -2px 3px #ca8dff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff;
   text-align: left;
   font-family: myFirstFont;
-  src: url("Venily.ttf")
+  src: url("Venily.ttf");
+  color: #4A0368;
 }
 
 h2 {
+  padding-top: 3%;
 	margin: auto;
 	letter-spacing: 0.015em;
-	font-size: 1.25em;
+	font-size: 1.5em;
     line-height: 1.56;
 	text-shadow: 0 1px #ca8dff, -1px 0 #ca8dff, -1px 2px #ca8dff, -2px 1px #ca8dff;
 	text-align: left;
     font-family: myFirstFont;
-    src: url("Venily.ttf")
+    src: url("Venily.ttf");
+    color: #4A0368;
+}
+
+p {
+	margin: auto;
+	letter-spacing: 0.015em;
+	font-size: 1.5em;
+    line-height: 1.56;
+	text-shadow: 0 1px #ca8dff, -1px 0 #ca8dff, -1px 2px #ca8dff, -2px 1px #ca8dff;
+	text-align: left;
+    font-family: myFirstFont;
+    src: url("Venily.ttf");
+    color: #4A0368;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("Venily.ttf");
 }
