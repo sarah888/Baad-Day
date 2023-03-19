@@ -37,7 +37,7 @@ function validate5() {
     }}
 
 confirm.addEventListener('click', () => {
-    if (confirm.innerHTML=="GO PACK LUNCH"){
+    if (confirm.innerHTML=="GO TO BED"){
         next.href="../end/end.html"
     }
     validate1();
@@ -46,24 +46,7 @@ confirm.addEventListener('click', () => {
     validate4();
     validate5();
     score = good/bad;
-    confirm.innerHTML="GO PACK LUNCH";
+    confirm.innerHTML="GO TO BED";
     alert(score);
 
 });
-
-// confirm.addEventListener('click',() => {
-//     if ((whiteNoise.checked)){
-//     whiteNoise.remove();}});
-// 
-// if ((milk.checked)){
-//     confirm.addEventListener('click',() => {milk.remove();});
-// }
-// if ((edm.checked)){
-//     confirm.addEventListener('click',() => {edm.remove();});
-// }
-// if ((phone.checked)){
-//     confirm.addEventListener('click',() => {phone.remove();});
-// }
-// if ((nyquil.checked)){
-//     confirm.addEventListener('click',() => {nyquil.remove();});
-// }

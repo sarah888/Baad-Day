@@ -305,3 +305,8 @@ h1 {
   font-family: myFirstFont;
   src: url("Venily.ttf")
 }
+#position1{
+  position: absolute;
+  top: 65%;
+  left: 40%;
+}
