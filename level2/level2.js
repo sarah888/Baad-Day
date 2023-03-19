@@ -1,4 +1,6 @@
 const apiKey = "ZRf2ijG6bg0QNbQoKTAIk77ECypW8XMqgNJgdJnf";
+let food1 = document.getElementById("food1")
+let food2 = document.getElementById("food2")
 
 // Get the user input of ingredients
 var input = document.getElementById("potato");
@@ -10,7 +12,19 @@ submit.addEventListener('click',getText);
 
 function getText(event){
   foods = input.value;
-}
+  for (key in nutrients){
+    if (foods.localeCompare(key) == 0){
+      let protein = "protein: " + nutrients[key]['protein'];
+      let carbs = " carbs: " + nutrients[key]['carbohydrate'];
+      food1.innerHTML = protein + carbs;
+      if (nutrients[key]['protein'] > 20) {
+        food2.innerHTML = "That's great, Sheeper is getting enough protein for lunch!";
+      } else {
+        food2.innerHTML = "You might want to reconsider what Sheeper wants for lunch.";
+      };
+      
+    }
+  }}
 
 const nutrients = {
   chicken: { protein: 23.9, carbohydrate: 0 },
@@ -25,11 +39,7 @@ if (nutrients.hasOwnProperty(food)) {
   console.log(`protein = ${protein}g and carbohydrate = ${carbohydrate}g`);
 
   // Check if the protein content is greater than 20g
-  if (protein > 20) {
-    console.log("That's great, Sheeper is getting enough protein for lunch!");
-  } else {
-    console.log("You might want to reconsider what Sheeper wants for lunch.");
-  }
+
 } else {
   console.log("Sorry, I don't know the nutrient values for that food item.");
 }
