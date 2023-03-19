@@ -48,5 +48,4 @@ confirm.addEventListener('click', () => {
     score = good/bad;
     confirm.innerHTML="GO TO BED";
     alert(score);
-
 });
