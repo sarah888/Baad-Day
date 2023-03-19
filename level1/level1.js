@@ -21,10 +21,10 @@ function checkCheck(){
 };
 
 confirm.addEventListener('click', () => {
-    if (confirm.innerHTML=="GO PACK LUNCH"){
+    if (confirm.innerHTML=="GO TO LUNCH"){
         next.href="../level2/level2.html"
     }
-    confirm.innerHTML="GO PACK LUNCH";
+    confirm.innerHTML="GO TO LUNCH";
     position.innerHTML=""
     
     if (checkBox.checked){
@@ -39,5 +39,4 @@ confirm.addEventListener('click', () => {
       text3.innerHTML = "disorders. Now, Sheeper can successfully prepare and "
       text4.innerHTML = "ace his interview!"
     }
-
 });
