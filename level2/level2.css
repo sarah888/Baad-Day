@@ -1,6 +1,6 @@
 /*Background Image*/
 body{
-    background-image: url("kitchenScenario.png");
+    background-image: url("kitchenScenario.jpg");
     background-attachment: fixed;
     background-size: 100% auto;
   }
@@ -35,7 +35,7 @@ touch-action: manipulation;
 --slice-4: inset(40% -6px 43% 0);
 --slice-5: inset(80% -6px 5% 0);
 
-content: 'WAKE UP';
+content: 'READY FOR THE DAY';
 display: block;
 position: absolute;
 top: 0;
@@ -121,13 +121,10 @@ animation-timing-function: steps(2, end);
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  font-family: myFirstFont;
-  src: url("Venily.ttf");
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-    color: #fa95ff;
-    
+    color: #4A0368;
 }
 
 /* The typing effect */
@@ -147,9 +144,39 @@ h1 {
   letter-spacing: 0.015em;
   font-size: 2em;
   line-height: 1.56;
-  /* text-shadow: 0 1px #ca8dff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
-      -2px 3px #ca8dff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff; */
+  text-shadow: 0 1px #ca8dff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
+      -2px 3px #ca8dff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff;
   text-align: left;
   font-family: myFirstFont;
-  src: url("Venily.ttf")
+  src: url("Venily.ttf");
+  color: #4A0368;
+}
+
+h2 {
+  padding-top: 3%;
+	margin: auto;
+	letter-spacing: 0.015em;
+	font-size: 1.5em;
+    line-height: 1.56;
+	text-shadow: 0 1px #ca8dff, -1px 0 #ca8dff, -1px 2px #ca8dff, -2px 1px #ca8dff;
+	text-align: left;
+    font-family: myFirstFont;
+    src: url("Venily.ttf");
+    color: #4A0368;
+}
+
+p {
+	margin: auto;
+	letter-spacing: 0.015em;
+	font-size: 1.5em;
+    line-height: 1.56;
+	text-shadow: 0 1px #ca8dff, -1px 0 #ca8dff, -1px 2px #ca8dff, -2px 1px #ca8dff;
+	text-align: left;
+    font-family: myFirstFont;
+    src: url("Venily.ttf");
+    color: #4A0368;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("Venily.ttf");
 }
