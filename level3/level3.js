@@ -2,7 +2,7 @@ let affirmation = document.getElementById("checkbox1");
 let hospital = document.getElementById("checkbox2");
 
 const confirm = document.getElementById("confirm");
-
+const next = document.getElementById("next");
 
 const cohere = require('cohere-ai'); // This is your trial API key
 cohere.init('yhlIG1WYyeUVrAJ2NzhQwYKnghq6sbs8DfWCPulm');
@@ -29,7 +29,7 @@ hospital.addEventListener("click", ()=>{
 
 confirm.addEventListener('click', () => {
   if (confirm.innerHTML=="GO TO LUNCH"){
-      next.href="../level2/level2.html"
+      next.href="../level4/level4.html"
   }
   confirm.innerHTML="GO TO LUNCH";
   position.innerHTML=""
