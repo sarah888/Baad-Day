@@ -16,6 +16,14 @@ var o = (async () => {
   console.log(`The confidence levels of the labels are ${JSON.stringify(response.body.classifications)}`);
 })();
 
+confirm.addEventListener('click', () => {
+  if (confirm.innerHTML=="GO TO BED"){
+      next.href="../level4/level4.html";
+  }
+  confirm.innerHTML="GO TO BED";
+  alert(o);
+});
+
 
 affirmation.addEventListener("click", ()=>{
   hospital.checked = false
