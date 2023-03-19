@@ -3,17 +3,19 @@ body{
     background-attachment: fixed;
     background-size: cover;
   }
+  @font-face {
+    font-family: myFirstFont;
+    src: url("Venily.ttf");
+}
 
-
-  
-  /* CSS */
   .button-49,
   .button-49:after {
     width: 150px;
     height: 76px;
     line-height: 78px;
     font-size: 20px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: myFirstFont;
+    src: url("Venily.ttf");
     background: linear-gradient(45deg, transparent 5%, #ff9101 5%);
     border: 0;
     color: #fff;
