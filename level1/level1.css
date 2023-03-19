@@ -307,6 +307,6 @@ h1 {
 }
 #position1{
   position: absolute;
-  bottom: 20%;
-  right: 20%;
+  top: 65%;
+  left: 40%;
 }
