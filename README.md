@@ -44,4 +44,3 @@ We attempted to implement Cohere Classification API, which takes multiple test c
 
 # What's Next for Baad Day
 Moving forward, Baad Day wants to implement the Co:here and FoodData Central API to create more impactful systems within our web app. As well, we hope to implement a diverse range of scenarios that one encounters, from frequent ones to obscure situations. This helps to build awareness and allows the youth to recognize these moments and learn how to approach them for the future.
-
